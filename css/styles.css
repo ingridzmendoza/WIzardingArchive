@@ -84,3 +84,13 @@ body {
     border-color: #052C50;
     box-shadow: 0 0 0 0.15rem rgba(38, 74, 110, 0.5);
 }
+
+#search-input {
+    background-color: #182D40;
+    color: #fff;
+    border: 1px solid #264A6E;
+}
+
+#search-input::placeholder {
+    color: #9fb3c8;
+}
