@@ -1,0 +1,86 @@
+.wizard-header {
+    background:
+        linear-gradient(rgba(3, 24, 45, 0.75),
+            rgba(27, 52, 74, 0.85)),
+        url("../assets/images/header-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.wizard-header h1 {
+    font-family: "Cinzel", serif;
+    letter-spacing: 5px;
+}
+
+
+.character-image {
+    height: 450px;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #1B344A;
+    color: #e5edf5;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+body {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(4, 35, 63, 0.85),
+            rgba(27, 52, 74, 0.85)),
+        url("../assets/images/hogwarts-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f1f5f9;
+}
+
+.btn-outline-warning,
+.btn-outline-info {
+    color: #e5edf5;
+    border-color: #264A6E;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-info:hover {
+    background-color: #264A6E;
+    border-color: #264A6E;
+    color: #ffffff;
+}
+
+.archive-btn {
+    background-color: #182D40;
+    color: #e5edf5;
+    border: 1px solid #264A6E;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.archive-btn:hover {
+    background-color: #264A6E;
+    border-color: #264A6E;
+    color: #ffffff;
+}
+
+.archive-btn:active,
+.archive-btn:focus {
+    background-color: #052C50;
+    border-color: #052C50;
+    box-shadow: 0 0 0 0.15rem rgba(38, 74, 110, 0.5);
+}
