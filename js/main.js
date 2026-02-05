@@ -1,6 +1,6 @@
+import { getAllCharacters } from "./api.js";
 import { setupEvents } from "./events.js";
-import { getAllCharacters, getSpells } from "./api.js";
-import { renderCharacters, renderSpells } from "./ui.js";
+import { renderCharacters } from "./ui.js";
 
 let currentData = [];
 let currentView = "characters";
@@ -25,12 +25,8 @@ function setupSearch() {
         const filtered = currentData.filter(item =>
             item.name.toLowerCase().includes(query)
         );
-
-        if (currentView === "spells") {
-            renderSpells(filtered);
-        } else {
-            renderCharacters(filtered);
-        }
+        
+        renderCharacters(filtered)
     });
 }
 
@@ -54,13 +50,6 @@ async function handleDataChange(type, value) {
         currentData = await getCharactersByHouse(value);
         currentView = "characters";
         renderCharacters(currentData);
-    }
-
-    // needs work
-    if (type === "spells") {
-        currentData = await getSpells();
-        currentView = "spells";
-        renderSpells(currentData);
     }
 }
 
